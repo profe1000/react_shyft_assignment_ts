@@ -1,9 +1,10 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { cleanup, render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+afterEach(cleanup)
+test('Sample Test', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
+  const linkElement = screen.getByText(/Please Select A Residence ID/i);
   expect(linkElement).toBeInTheDocument();
 });

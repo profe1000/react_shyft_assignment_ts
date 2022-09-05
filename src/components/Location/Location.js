@@ -8,6 +8,7 @@ import Loadingerror from "../Sharedcomponents/Loadingerror/Loadingerror";
 
 const Location = () => {
   const access_token = "zUKWzuo6UBFT-nu4HVmk";
+  const [formError, setFormError] = useState(null);
   const [error, setError] = useState(null);
   const [items, setItems] = useState(null);
   const [residentId, setresidentId] = useState("");
@@ -15,8 +16,9 @@ const Location = () => {
   const [dataStatus, setDataStatus] = useState([-2]);
 
   const loadData = () => {
+    setFormError("");
     if (residentId === "") {
-      alert("Please Enter A Resident ID");
+      setFormError("Please Enter A Resident ID");
       return;
     }
     setDataStatus(-1);
@@ -63,15 +65,16 @@ const Location = () => {
     <div className="w3-card-2 w3-padding cardheight w3-round w3-white">
       {/* Label for the Instruction Text. */}
       <div>
-        <h3> Please Select A Residence ID </h3>
+        <h3 data-testid="textResidentId"> Please Select A Residence ID </h3>
 
-        <p> To know your power usage </p>
+        <p data-testid="textpowerusage"> To know your power usage </p>
       </div>
 
       {/* Display the search Box for Searching for Resident ID */}
       <div className="w3-container w3-margin-bottom">
         <div className="w3-col w3-right btnholder">
           <a
+            data-testid="btnLoadData"
             onClick={() => loadData()}
             className="w3-btn w3-yellow w3-round w3-text-blue btn"
           >
@@ -82,6 +85,7 @@ const Location = () => {
 
         <div className="w3-rest">
           <input
+            data-testid="inputLoadData"
             type="text"
             value={residentId}
             onChange={(e) => setresidentId(e.target.value)}
@@ -90,6 +94,14 @@ const Location = () => {
             placeholder="Enter Resident ID Here"
           />
         </div>
+      </div>
+
+      {/* Error message for wrong Input. */}
+      <div>
+        <span className="w3-container w3-text-red" data-testid="textwronginput">
+          {" "}
+          {formError}
+        </span>
       </div>
 
       {/* Display a spinner when data is loading */}
