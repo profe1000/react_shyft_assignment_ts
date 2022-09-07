@@ -43,6 +43,8 @@
     ]
   },
   "devDependencies": {
+    "axios-mock-adapter": "^1.21.2",
+    "jest-mock-axios": "^4.7.0-beta",
     "jest-watch-typeahead": "^0.6.5"
   }
 }

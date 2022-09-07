@@ -1,6 +1,6 @@
 import "./Loadingerror.css";
 
-const Loadingerror = (props) => {
+const Loadingerror = (props:any) => {
   return (
     <div>
       <div className="w3-padding w3-round w3-white">

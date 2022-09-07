@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import "./Location.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import Locationdata from "./Locationdata/Locationdata";
 import Spinner from "../Sharedcomponents/Spinner/Spinner";
@@ -8,14 +8,29 @@ import Loadingerror from "../Sharedcomponents/Loadingerror/Loadingerror";
 
 const Location = () => {
   const access_token = "zUKWzuo6UBFT-nu4HVmk";
-  const [formError, setFormError] = useState(null);
-  const [error, setError] = useState(null);
-  const [items, setItems] = useState(null);
-  const [residentId, setresidentId] = useState("");
+  const [formError, setFormError]:any = useState(null);
+  const [error, setError]:any = useState(null);
+  const [items, setItems]:any = useState(null);
+  const [residentId, setresidentId]:any = useState("");
   // -1 Loading, 200 Success,0 No Internet Connection,  401 Unathorised, 404 Not Found From Testing the Api
-  const [dataStatus, setDataStatus] = useState([-2]);
+  const [dataStatus, setDataStatus]:any = useState([-2]);
+  const [isLoading, setisLoading]:any = useState(false);
+   
 
-  const loadData = () => {
+  const startLoading =  async() =>{
+     setisLoading(true);
+  }
+
+  useEffect(() => {
+    loadData();
+   }, [isLoading]);
+  
+  const loadData = async() => {
+    if(!isLoading){
+      return;
+    }
+    setisLoading(false);
+
     setFormError("");
     if (residentId === "") {
       setFormError("Please Enter A Resident ID");
@@ -33,7 +48,7 @@ const Location = () => {
         setDataStatus(res.status);
 
         //Collect/Map the Neccessary fields we need from our api Result in our own object.
-        const transformedDevices = res.data.included.map((deviceList) => {
+        const transformedDevices = res.data.included.map((deviceList:any) => {
           return {
             id: deviceList.id,
             type: deviceList.type,
@@ -55,8 +70,8 @@ const Location = () => {
         setItems(locationObj);
       })
       .catch(function (error) {
-        setDataStatus(error.toJSON()["status"]);
-        //console.log(error.toJSON());
+        //setDataStatus(error.toJSON()["status"]);
+        console.log(error.toJSON());
         setError(error);
       });
   };
@@ -68,6 +83,8 @@ const Location = () => {
         <h3 data-testid="textResidentId"> Please Select A Residence ID </h3>
 
         <p data-testid="textpowerusage"> To know your power usage </p>
+
+        {dataStatus}
       </div>
 
       {/* Display the search Box for Searching for Resident ID */}
@@ -75,7 +92,7 @@ const Location = () => {
         <div className="w3-col w3-right btnholder">
           <a
             data-testid="btnLoadData"
-            onClick={() => loadData()}
+            onClick={() => startLoading()}
             className="w3-btn w3-yellow w3-round w3-text-blue btn"
           >
             {" "}
@@ -89,7 +106,7 @@ const Location = () => {
             type="text"
             value={residentId}
             onChange={(e) => setresidentId(e.target.value)}
-            onBlur={() => loadData()}
+            onBlur={() => startLoading()}
             className="w3-input w3-round w3-border"
             placeholder="Enter Resident ID Here"
           />
@@ -110,7 +127,7 @@ const Location = () => {
       {/* Display a no Internet section when data fails to connect to api endpoint.*/}
       {dataStatus === 0 && (
         <Loadingerror
-          reLoadData={() => loadData()}
+          reLoadData={() => startLoading()}
           errormessage="No Internet Connection"
         ></Loadingerror>
       )}
@@ -121,7 +138,7 @@ const Location = () => {
       {/* Display other error message */}
       {dataStatus > 300 && (
         <Loadingerror
-          reLoadData={() => loadData()}
+          reLoadData={() => startLoading()}
           errormessage={error.message}
         ></Loadingerror>
       )}

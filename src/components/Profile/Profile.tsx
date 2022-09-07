@@ -7,10 +7,10 @@ import Loadingerror from "../Sharedcomponents/Loadingerror/Loadingerror";
 
 const Profile = () => {
   const access_token = "zUKWzuo6UBFT-nu4HVmk";
-  const [error, setError] = useState(null);
-  const [items, setItems] = useState(null);
+  const [error, setError]:any = useState(null);
+  const [items, setItems]:any = useState(null);
   // -1 Loading, 200 Success,0 No Internet Connection,  401 Unathorised, 404 Not Found From Testing the Api
-  const [dataStatus, setDataStatus] = useState([-1]);
+  const [dataStatus, setDataStatus]:any = useState([-1]);
 
   useEffect(() => {
     loadData();
