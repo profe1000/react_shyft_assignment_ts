@@ -94,7 +94,7 @@ test("Search Lost Focus without an Input", async () => {
   );
 });
 
-test.only("Button was trigger with a valid Input", async () => {
+test("Button was trigger with a valid Input", async () => {
 
 mock.onGet("https://api-dev.trysolstice.com/v1/households/10").reply(200, getmockresult(200));   
   const { getByTestId } = render(<Location />);
@@ -120,7 +120,7 @@ mock.onGet("https://api-dev.trysolstice.com/v1/households/10").reply(200, getmoc
   });
 });
 
-test.only("should handle failed response", async () => {
+test("should handle failed response", async () => {
   // mock axios call to response failure
  
   mock.onGet("https://api-dev.trysolstice.com/v1/households/8").reply(404, getmockresult(404));
