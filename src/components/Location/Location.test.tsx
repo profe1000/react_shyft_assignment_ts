@@ -4,7 +4,7 @@ import {
   screen,
   cleanup,
   fireEvent,
-  waitFor,
+  waitFor
 } from "@testing-library/react";
 import Location from "./Location";
 import "@testing-library/jest-dom/extend-expect";
@@ -18,10 +18,10 @@ var mock = new MockAdapter(axios);
 
 // Mock any GET request to /users
 // arguments for reply are (status, data, headers)
-mock.onGet("https://api-dev.trysolstice.com/v1/households/10").reply(200, getmockresult(200));
+
 
 afterEach(cleanup);
-// Test That Search Button is valid
+
 test("vTest For Search Button", () => {
   const { getByTestId } = render(<Location />);
   // eslint-disable-next-line testing-library/prefer-screen-queries
@@ -32,7 +32,7 @@ test("vTest For Search Button", () => {
   expect(loadBtn.textContent).toContain("Search");
 });
 
-// Test That Input Field is valid
+
 test("Input Field Test", () => {
   const { getByTestId } = render(<Location />);
   // eslint-disable-next-line testing-library/prefer-screen-queries
@@ -43,7 +43,6 @@ test("Input Field Test", () => {
   expect(inputField).toHaveDisplayValue("");
 });
 
-// Test That Input field can change its values
 test("Input Field can change", async () => {
   const { getByTestId } = render(<Location />);
   // eslint-disable-next-line testing-library/prefer-screen-queries
@@ -58,7 +57,6 @@ test("Input Field can change", async () => {
   await waitFor(() => expect(inputField).toHaveDisplayValue("10"));
 });
 
-// Test That Button was click without an Input
 test("Button was click without Input", async () => {
   const { getByTestId } = render(<Location />);
 
@@ -76,7 +74,6 @@ test("Button was click without Input", async () => {
   );
 });
 
-// Test That Search lost focus without an imput
 test("Search Lost Focus without an Input", async () => {
   const { getByTestId } = render(<Location />);
 
@@ -97,8 +94,9 @@ test("Search Lost Focus without an Input", async () => {
   );
 });
 
-// Test That Button was click with a valid Input And get a valid result
-test("Button was trigger with a valid Input", async () => {
+test.only("Button was trigger with a valid Input", async () => {
+
+mock.onGet("https://api-dev.trysolstice.com/v1/households/10").reply(200, getmockresult(200));   
   const { getByTestId } = render(<Location />);
 
   // eslint-disable-next-line testing-library/prefer-screen-queries
@@ -114,19 +112,40 @@ test("Button was trigger with a valid Input", async () => {
   });
 
   // Click the Button without an Input
+  // eslint-disable-next-line testing-library/no-wait-for-side-effects
   fireEvent.click(loadBtn);
-
-  await expect(screen.getByText(/Loading/i)).toBeInTheDocument();
-
-  await waitFor(() => {
-    axios
-      .get("https://api-dev.trysolstice.com/v1/households/10")
-      .then(function (response:any) {
-        expect(response.status).toEqual(200);
-      });
-  });
 
   await waitFor(() => {
     expect(screen.getByText(/Address/i)).toBeInTheDocument();
   });
 });
+
+test.only("should handle failed response", async () => {
+  // mock axios call to response failure
+ 
+  mock.onGet("https://api-dev.trysolstice.com/v1/households/8").reply(404, getmockresult(404));
+  
+  const { getByTestId } = render(<Location />);
+
+  // eslint-disable-next-line testing-library/prefer-screen-queries
+  const loadBtn = getByTestId("btnLoadData");
+
+  // eslint-disable-next-line testing-library/prefer-screen-queries
+  const inputField = getByTestId("inputLoadData");
+
+  fireEvent.change(inputField, {
+    target: {
+      value: "8",
+    },
+  });
+
+  // Click the Button without an Input
+    // eslint-disable-next-line testing-library/no-wait-for-side-effects
+  fireEvent.click(loadBtn);
+
+  await waitFor(() => {
+    expect(screen.getByText(/Household Not Found/i)).toBeInTheDocument();
+   });
+});
+
+

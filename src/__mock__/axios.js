@@ -155,9 +155,22 @@ const data = {
   ],
 };
 
+const errresponse = {
+  errors: [
+    {
+      id: "household",
+      title: "Not Found",
+    },
+  ],
+};
+
 export default function getmockresult(index) {
   if (index === 200) {
     return data;
+  }
+
+  if (index === 404) {
+    return errresponse;
   }
 
   return null;

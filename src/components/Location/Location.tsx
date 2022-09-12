@@ -37,7 +37,7 @@ const Location = () => {
       return;
     }
     setDataStatus(-1);
-    axios
+    await axios
       .get(`https://api-dev.trysolstice.com/v1/households/${residentId}`, {
         headers: {
           Authorization: `Bearer  ${access_token}`,
@@ -46,7 +46,6 @@ const Location = () => {
       .then((res) => {
         //console.log(res);
         setDataStatus(res.status);
-
         //Collect/Map the Neccessary fields we need from our api Result in our own object.
         const transformedDevices = res.data.included.map((deviceList:any) => {
           return {
@@ -70,9 +69,9 @@ const Location = () => {
         setItems(locationObj);
       })
       .catch(function (error) {
-        //setDataStatus(error.toJSON()["status"]);
-        console.log(error.toJSON());
-        setError(error);
+        //console.log(error);
+        setDataStatus(error["response"]["status"]);
+        setError(error["response"]["data"]["errors"][0]["title"]);
       });
   };
 
@@ -83,8 +82,6 @@ const Location = () => {
         <h3 data-testid="textResidentId"> Please Select A Residence ID </h3>
 
         <p data-testid="textpowerusage"> To know your power usage </p>
-
-        {dataStatus}
       </div>
 
       {/* Display the search Box for Searching for Resident ID */}
@@ -139,7 +136,7 @@ const Location = () => {
       {dataStatus > 300 && (
         <Loadingerror
           reLoadData={() => startLoading()}
-          errormessage={error.message}
+          errormessage={'Household ' + error}
         ></Loadingerror>
       )}
     </div>
