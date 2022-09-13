@@ -1,32 +1,36 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import "./Location.css";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import axios from "axios";
 import Locationdata from "./Locationdata/Locationdata";
 import Spinner from "../Sharedcomponents/Spinner/Spinner";
 import Loadingerror from "../Sharedcomponents/Loadingerror/Loadingerror";
+import { Ilocationitemsprops } from "./types";
+import React from "react";
 
 const Location = () => {
-  const access_token = "zUKWzuo6UBFT-nu4HVmk";
-  const [formError, setFormError]:any = useState(null);
-  const [error, setError]:any = useState(null);
-  const [items, setItems]:any = useState(null);
-  const [residentId, setresidentId]:any = useState("");
-  // -1 Loading, 200 Success,0 No Internet Connection,  401 Unathorised, 404 Not Found From Testing the Api
-  const [dataStatus, setDataStatus]:any = useState([-2]);
-  const [isLoading, setisLoading]:any = useState(false);
-   
+  const accessToken: string = "zUKWzuo6UBFT-nu4HVmk";
+  const [formError, setFormError] = React.useState<string>("");
+  const [error, setError] = React.useState<string>("");
+  const [items, setItems] = React.useState<Ilocationitemsprops>();
+  const [residentId, setresidentId] = React.useState<string>("");
 
-  const startLoading =  async() =>{
-     setisLoading(true);
-  }
+  /** 
+   -1 Loading, 200 Success,0 No Internet Connection,  401 Unathorised, 404 Not Found From Testing the Api
+   */
+  const [dataStatus, setDataStatus] = React.useState<number>(-2);
+  const [isLoading, setisLoading] = React.useState<boolean>(false);
+
+  const startLoading = async () => {
+    setisLoading(true);
+  };
 
   useEffect(() => {
     loadData();
-   }, [isLoading]);
-  
-  const loadData = async() => {
-    if(!isLoading){
+  }, [isLoading]);
+
+  const loadData = async () => {
+    if (!isLoading) {
       return;
     }
     setisLoading(false);
@@ -40,21 +44,21 @@ const Location = () => {
     await axios
       .get(`https://api-dev.trysolstice.com/v1/households/${residentId}`, {
         headers: {
-          Authorization: `Bearer  ${access_token}`,
+          Authorization: `Bearer  ${accessToken}`,
         },
       })
       .then((res) => {
         //console.log(res);
         setDataStatus(res.status);
         //Collect/Map the Neccessary fields we need from our api Result in our own object.
-        const transformedDevices = res.data.included.map((deviceList:any) => {
+        const transformedDevices = res.data.included.map((deviceList: any) => {
           return {
             id: deviceList.id,
             type: deviceList.type,
             onlinestate: deviceList.attributes.online ? "True" : "False",
           };
         });
-        const locationObj = {
+        const locationObj: Ilocationitemsprops = {
           address: res.data.data["attributes"]["address_1"],
           residentName: res.data.data["attributes"]["nickname"],
           totalEnergy:
@@ -70,7 +74,7 @@ const Location = () => {
       })
       .catch(function (error) {
         //console.log(error);
-        setDataStatus(error["response"]["status"]);
+        setDataStatus(400);
         setError(error["response"]["data"]["errors"][0]["title"]);
       });
   };
@@ -92,8 +96,7 @@ const Location = () => {
             onClick={() => startLoading()}
             className="w3-btn w3-yellow w3-round w3-text-blue btn"
           >
-            {" "}
-            Search{" "}
+            Search
           </a>
         </div>
 
@@ -113,7 +116,6 @@ const Location = () => {
       {/* Error message for wrong Input. */}
       <div>
         <span className="w3-container w3-text-red" data-testid="textwronginput">
-          {" "}
           {formError}
         </span>
       </div>
@@ -136,7 +138,7 @@ const Location = () => {
       {dataStatus > 300 && (
         <Loadingerror
           reLoadData={() => startLoading()}
-          errormessage={'Household ' + error}
+          errormessage={"Household " + error}
         ></Loadingerror>
       )}
     </div>

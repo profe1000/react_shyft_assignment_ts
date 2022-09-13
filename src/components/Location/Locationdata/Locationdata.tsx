@@ -1,42 +1,45 @@
+import { Idevice, Ilocationitemsprops } from "../types";
 import "./Locationdata.css";
 
-const Locationdata = (props) => {
+const Locationdata = (props: any) => {
+  const propItem: Ilocationitemsprops = props.items;
+
   return (
     <div className="w3-padding w3-round w3-white">
       <img
         src={process.env.PUBLIC_URL + "images/iconaddress.png"}
         className="icon"
         alt="iconaddress"
-      />{" "}
-      Address :{props.items.address} <hr />
+      />
+      Address :{propItem.address} <hr />
       <img
         src={process.env.PUBLIC_URL + "images/iconaddress.png"}
         className="icon"
         alt="iconAddress"
-      />{" "}
-      Resident Name :{props.items.residentName} <hr />
+      />
+      Resident Name :{propItem.residentName} <hr />
       <img
         src={process.env.PUBLIC_URL + "images/iconenergy.png"}
         className="icon"
         alt="iconenergy"
-      />{" "}
-      Total Energy Used :{props.items.totalEnergy} Kw
+      />
+      Total Energy Used :{propItem.totalEnergy} Kw
       <br />
       <br />
       <img
         src={process.env.PUBLIC_URL + "images/icongen.png"}
         className="icon"
         alt="icongen"
-      />{" "}
-      GEN Usage : {props.items.genUsage}Kw
+      />
+      GEN Usage : {propItem.genUsage}Kw
       <br />
       <br />
       <img
         src={process.env.PUBLIC_URL + "images/icontransformer.png"}
         className="icon"
         alt="icontransformer"
-      />{" "}
-      GRID Usage : {props.items.gridUsgae}KW
+      />
+      GRID Usage : {propItem.gridUsgae}KW
       <hr />
       Devices Included in this Household <br />
       <br />
@@ -52,7 +55,7 @@ const Locationdata = (props) => {
           </thead>
 
           <tbody>
-            {props.items.devices.map((item, index) => (
+            {propItem.devices.map((item: Idevice, index: number) => (
               <tr key={index}>
                 <td>{index + 1}</td>
                 <td>{item.id}</td>
