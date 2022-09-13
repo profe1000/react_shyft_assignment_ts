@@ -1,4 +1,4 @@
-import { Idevice, Ilocationitemsprops } from "../types";
+import { Idevice, Ilocationitemsprops } from "../../types";
 import "./Locationdata.css";
 
 const Locationdata = (props: any) => {

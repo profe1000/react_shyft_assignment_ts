@@ -1,6 +1,6 @@
 import "./Loadingerror.css";
 
-const Loadingerror = (props:any) => {
+const Loadingerror = (props: any) => {
   return (
     <div>
       <div className="w3-padding w3-round w3-white">
@@ -10,9 +10,8 @@ const Loadingerror = (props:any) => {
           className="w3-btn w3-yellow w3-round w3-text-blue resetbtn"
           onClick={props.reLoadData}
         >
-          {" "}
-          ReLoad{" "}
-        </button>{" "}
+          ReLoad
+        </button>
         &nbsp;
         <br />
         <br />

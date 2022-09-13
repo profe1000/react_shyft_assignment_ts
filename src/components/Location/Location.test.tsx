@@ -4,7 +4,7 @@ import {
   screen,
   cleanup,
   fireEvent,
-  waitFor
+  waitFor,
 } from "@testing-library/react";
 import Location from "./Location";
 import "@testing-library/jest-dom/extend-expect";
@@ -19,7 +19,6 @@ var mock = new MockAdapter(axios);
 // Mock any GET request to /users
 // arguments for reply are (status, data, headers)
 
-
 afterEach(cleanup);
 
 test("vTest For Search Button", () => {
@@ -31,7 +30,6 @@ test("vTest For Search Button", () => {
   //Check that the button contain the Text Searh
   expect(loadBtn.textContent).toContain("Search");
 });
-
 
 test("Input Field Test", () => {
   const { getByTestId } = render(<Location />);
@@ -90,13 +88,14 @@ test("Search Lost Focus without an Input", async () => {
   fireEvent.focusOut(inputField);
 
   await waitFor(() =>
-    expect(wrongInput.textContent).toBe(" Please Enter A Resident ID")
+    expect(wrongInput.textContent).toBe("Please Enter A Resident ID")
   );
 });
 
 test("Button was trigger with a valid Input", async () => {
-
-mock.onGet("https://api-dev.trysolstice.com/v1/households/10").reply(200, getmockresult(200));   
+  mock
+    .onGet("https://api-dev.trysolstice.com/v1/households/10")
+    .reply(200, getmockresult(200));
   const { getByTestId } = render(<Location />);
 
   // eslint-disable-next-line testing-library/prefer-screen-queries
@@ -122,9 +121,11 @@ mock.onGet("https://api-dev.trysolstice.com/v1/households/10").reply(200, getmoc
 
 test("should handle failed response", async () => {
   // mock axios call to response failure
- 
-  mock.onGet("https://api-dev.trysolstice.com/v1/households/8").reply(404, getmockresult(404));
-  
+
+  mock
+    .onGet("https://api-dev.trysolstice.com/v1/households/8")
+    .reply(404, getmockresult(404));
+
   const { getByTestId } = render(<Location />);
 
   // eslint-disable-next-line testing-library/prefer-screen-queries
@@ -140,12 +141,10 @@ test("should handle failed response", async () => {
   });
 
   // Click the Button without an Input
-    // eslint-disable-next-line testing-library/no-wait-for-side-effects
+  // eslint-disable-next-line testing-library/no-wait-for-side-effects
   fireEvent.click(loadBtn);
 
   await waitFor(() => {
     expect(screen.getByText(/Household Not Found/i)).toBeInTheDocument();
-   });
+  });
 });
-
-

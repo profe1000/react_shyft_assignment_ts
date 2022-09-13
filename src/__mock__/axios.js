@@ -164,9 +164,3199 @@ const errresponse = {
   ],
 };
 
+const profileresponse = {
+  data: {
+    id: "120",
+    type: "users",
+    attributes: {
+      first_name: "Developer",
+      last_name: "Jones",
+      email: "interviews@shyftpower.com",
+      phone: null,
+      app_flags: [],
+      middle_name: null,
+      username: null,
+      primary_team_membership_id: 27,
+      primary_team_permissions: "multi_site_viewer",
+      auth_token: "zUKWzuo6UBFT-nu4HVmk",
+    },
+    relationships: {
+      households: {
+        data: [
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "9",
+            type: "households",
+          },
+          {
+            id: "17",
+            type: "households",
+          },
+          {
+            id: "17",
+            type: "households",
+          },
+          {
+            id: "17",
+            type: "households",
+          },
+          {
+            id: "17",
+            type: "households",
+          },
+          {
+            id: "17",
+            type: "households",
+          },
+          {
+            id: "17",
+            type: "households",
+          },
+          {
+            id: "17",
+            type: "households",
+          },
+          {
+            id: "17",
+            type: "households",
+          },
+          {
+            id: "17",
+            type: "households",
+          },
+          {
+            id: "17",
+            type: "households",
+          },
+          {
+            id: "17",
+            type: "households",
+          },
+          {
+            id: "17",
+            type: "households",
+          },
+          {
+            id: "17",
+            type: "households",
+          },
+          {
+            id: "17",
+            type: "households",
+          },
+          {
+            id: "17",
+            type: "households",
+          },
+          {
+            id: "17",
+            type: "households",
+          },
+          {
+            id: "17",
+            type: "households",
+          },
+          {
+            id: "17",
+            type: "households",
+          },
+          {
+            id: "17",
+            type: "households",
+          },
+          {
+            id: "17",
+            type: "households",
+          },
+          {
+            id: "17",
+            type: "households",
+          },
+          {
+            id: "17",
+            type: "households",
+          },
+          {
+            id: "17",
+            type: "households",
+          },
+          {
+            id: "17",
+            type: "households",
+          },
+          {
+            id: "17",
+            type: "households",
+          },
+          {
+            id: "17",
+            type: "households",
+          },
+          {
+            id: "17",
+            type: "households",
+          },
+          {
+            id: "17",
+            type: "households",
+          },
+          {
+            id: "17",
+            type: "households",
+          },
+          {
+            id: "17",
+            type: "households",
+          },
+          {
+            id: "17",
+            type: "households",
+          },
+          {
+            id: "17",
+            type: "households",
+          },
+          {
+            id: "55",
+            type: "households",
+          },
+          {
+            id: "55",
+            type: "households",
+          },
+          {
+            id: "55",
+            type: "households",
+          },
+          {
+            id: "55",
+            type: "households",
+          },
+          {
+            id: "55",
+            type: "households",
+          },
+          {
+            id: "55",
+            type: "households",
+          },
+          {
+            id: "55",
+            type: "households",
+          },
+          {
+            id: "55",
+            type: "households",
+          },
+          {
+            id: "55",
+            type: "households",
+          },
+          {
+            id: "55",
+            type: "households",
+          },
+          {
+            id: "55",
+            type: "households",
+          },
+          {
+            id: "55",
+            type: "households",
+          },
+          {
+            id: "55",
+            type: "households",
+          },
+          {
+            id: "55",
+            type: "households",
+          },
+          {
+            id: "55",
+            type: "households",
+          },
+          {
+            id: "55",
+            type: "households",
+          },
+          {
+            id: "55",
+            type: "households",
+          },
+          {
+            id: "55",
+            type: "households",
+          },
+          {
+            id: "55",
+            type: "households",
+          },
+          {
+            id: "55",
+            type: "households",
+          },
+          {
+            id: "55",
+            type: "households",
+          },
+          {
+            id: "55",
+            type: "households",
+          },
+          {
+            id: "55",
+            type: "households",
+          },
+          {
+            id: "55",
+            type: "households",
+          },
+          {
+            id: "55",
+            type: "households",
+          },
+          {
+            id: "55",
+            type: "households",
+          },
+          {
+            id: "55",
+            type: "households",
+          },
+          {
+            id: "55",
+            type: "households",
+          },
+          {
+            id: "55",
+            type: "households",
+          },
+          {
+            id: "55",
+            type: "households",
+          },
+          {
+            id: "56",
+            type: "households",
+          },
+          {
+            id: "56",
+            type: "households",
+          },
+          {
+            id: "56",
+            type: "households",
+          },
+          {
+            id: "56",
+            type: "households",
+          },
+          {
+            id: "56",
+            type: "households",
+          },
+          {
+            id: "56",
+            type: "households",
+          },
+          {
+            id: "56",
+            type: "households",
+          },
+          {
+            id: "56",
+            type: "households",
+          },
+          {
+            id: "56",
+            type: "households",
+          },
+          {
+            id: "56",
+            type: "households",
+          },
+          {
+            id: "56",
+            type: "households",
+          },
+          {
+            id: "56",
+            type: "households",
+          },
+          {
+            id: "56",
+            type: "households",
+          },
+          {
+            id: "56",
+            type: "households",
+          },
+          {
+            id: "56",
+            type: "households",
+          },
+          {
+            id: "56",
+            type: "households",
+          },
+          {
+            id: "56",
+            type: "households",
+          },
+          {
+            id: "56",
+            type: "households",
+          },
+          {
+            id: "56",
+            type: "households",
+          },
+          {
+            id: "56",
+            type: "households",
+          },
+          {
+            id: "56",
+            type: "households",
+          },
+          {
+            id: "56",
+            type: "households",
+          },
+          {
+            id: "56",
+            type: "households",
+          },
+          {
+            id: "56",
+            type: "households",
+          },
+          {
+            id: "56",
+            type: "households",
+          },
+          {
+            id: "56",
+            type: "households",
+          },
+          {
+            id: "56",
+            type: "households",
+          },
+          {
+            id: "56",
+            type: "households",
+          },
+          {
+            id: "56",
+            type: "households",
+          },
+          {
+            id: "56",
+            type: "households",
+          },
+          {
+            id: "59",
+            type: "households",
+          },
+          {
+            id: "59",
+            type: "households",
+          },
+          {
+            id: "59",
+            type: "households",
+          },
+          {
+            id: "59",
+            type: "households",
+          },
+          {
+            id: "59",
+            type: "households",
+          },
+          {
+            id: "59",
+            type: "households",
+          },
+          {
+            id: "59",
+            type: "households",
+          },
+          {
+            id: "59",
+            type: "households",
+          },
+          {
+            id: "59",
+            type: "households",
+          },
+          {
+            id: "59",
+            type: "households",
+          },
+          {
+            id: "59",
+            type: "households",
+          },
+          {
+            id: "59",
+            type: "households",
+          },
+          {
+            id: "59",
+            type: "households",
+          },
+          {
+            id: "59",
+            type: "households",
+          },
+          {
+            id: "59",
+            type: "households",
+          },
+          {
+            id: "59",
+            type: "households",
+          },
+          {
+            id: "59",
+            type: "households",
+          },
+          {
+            id: "59",
+            type: "households",
+          },
+          {
+            id: "59",
+            type: "households",
+          },
+          {
+            id: "59",
+            type: "households",
+          },
+          {
+            id: "59",
+            type: "households",
+          },
+          {
+            id: "59",
+            type: "households",
+          },
+          {
+            id: "59",
+            type: "households",
+          },
+          {
+            id: "59",
+            type: "households",
+          },
+          {
+            id: "59",
+            type: "households",
+          },
+          {
+            id: "59",
+            type: "households",
+          },
+          {
+            id: "59",
+            type: "households",
+          },
+          {
+            id: "59",
+            type: "households",
+          },
+          {
+            id: "59",
+            type: "households",
+          },
+          {
+            id: "59",
+            type: "households",
+          },
+          {
+            id: "60",
+            type: "households",
+          },
+          {
+            id: "60",
+            type: "households",
+          },
+          {
+            id: "60",
+            type: "households",
+          },
+          {
+            id: "60",
+            type: "households",
+          },
+          {
+            id: "60",
+            type: "households",
+          },
+          {
+            id: "60",
+            type: "households",
+          },
+          {
+            id: "60",
+            type: "households",
+          },
+          {
+            id: "60",
+            type: "households",
+          },
+          {
+            id: "60",
+            type: "households",
+          },
+          {
+            id: "60",
+            type: "households",
+          },
+          {
+            id: "60",
+            type: "households",
+          },
+          {
+            id: "60",
+            type: "households",
+          },
+          {
+            id: "60",
+            type: "households",
+          },
+          {
+            id: "60",
+            type: "households",
+          },
+          {
+            id: "60",
+            type: "households",
+          },
+          {
+            id: "60",
+            type: "households",
+          },
+          {
+            id: "60",
+            type: "households",
+          },
+          {
+            id: "60",
+            type: "households",
+          },
+          {
+            id: "60",
+            type: "households",
+          },
+          {
+            id: "60",
+            type: "households",
+          },
+          {
+            id: "60",
+            type: "households",
+          },
+          {
+            id: "60",
+            type: "households",
+          },
+          {
+            id: "60",
+            type: "households",
+          },
+          {
+            id: "60",
+            type: "households",
+          },
+          {
+            id: "60",
+            type: "households",
+          },
+          {
+            id: "60",
+            type: "households",
+          },
+          {
+            id: "60",
+            type: "households",
+          },
+          {
+            id: "60",
+            type: "households",
+          },
+          {
+            id: "60",
+            type: "households",
+          },
+          {
+            id: "60",
+            type: "households",
+          },
+          {
+            id: "61",
+            type: "households",
+          },
+          {
+            id: "61",
+            type: "households",
+          },
+          {
+            id: "61",
+            type: "households",
+          },
+          {
+            id: "61",
+            type: "households",
+          },
+          {
+            id: "61",
+            type: "households",
+          },
+          {
+            id: "61",
+            type: "households",
+          },
+          {
+            id: "61",
+            type: "households",
+          },
+          {
+            id: "61",
+            type: "households",
+          },
+          {
+            id: "61",
+            type: "households",
+          },
+          {
+            id: "61",
+            type: "households",
+          },
+          {
+            id: "61",
+            type: "households",
+          },
+          {
+            id: "61",
+            type: "households",
+          },
+          {
+            id: "61",
+            type: "households",
+          },
+          {
+            id: "61",
+            type: "households",
+          },
+          {
+            id: "61",
+            type: "households",
+          },
+          {
+            id: "61",
+            type: "households",
+          },
+          {
+            id: "61",
+            type: "households",
+          },
+          {
+            id: "61",
+            type: "households",
+          },
+          {
+            id: "61",
+            type: "households",
+          },
+          {
+            id: "61",
+            type: "households",
+          },
+          {
+            id: "61",
+            type: "households",
+          },
+          {
+            id: "61",
+            type: "households",
+          },
+          {
+            id: "61",
+            type: "households",
+          },
+          {
+            id: "61",
+            type: "households",
+          },
+          {
+            id: "61",
+            type: "households",
+          },
+          {
+            id: "61",
+            type: "households",
+          },
+          {
+            id: "61",
+            type: "households",
+          },
+          {
+            id: "61",
+            type: "households",
+          },
+          {
+            id: "61",
+            type: "households",
+          },
+          {
+            id: "61",
+            type: "households",
+          },
+          {
+            id: "62",
+            type: "households",
+          },
+          {
+            id: "62",
+            type: "households",
+          },
+          {
+            id: "62",
+            type: "households",
+          },
+          {
+            id: "62",
+            type: "households",
+          },
+          {
+            id: "62",
+            type: "households",
+          },
+          {
+            id: "62",
+            type: "households",
+          },
+          {
+            id: "62",
+            type: "households",
+          },
+          {
+            id: "62",
+            type: "households",
+          },
+          {
+            id: "62",
+            type: "households",
+          },
+          {
+            id: "62",
+            type: "households",
+          },
+          {
+            id: "62",
+            type: "households",
+          },
+          {
+            id: "62",
+            type: "households",
+          },
+          {
+            id: "62",
+            type: "households",
+          },
+          {
+            id: "62",
+            type: "households",
+          },
+          {
+            id: "62",
+            type: "households",
+          },
+          {
+            id: "62",
+            type: "households",
+          },
+          {
+            id: "62",
+            type: "households",
+          },
+          {
+            id: "62",
+            type: "households",
+          },
+          {
+            id: "62",
+            type: "households",
+          },
+          {
+            id: "62",
+            type: "households",
+          },
+          {
+            id: "62",
+            type: "households",
+          },
+          {
+            id: "62",
+            type: "households",
+          },
+          {
+            id: "62",
+            type: "households",
+          },
+          {
+            id: "62",
+            type: "households",
+          },
+          {
+            id: "62",
+            type: "households",
+          },
+          {
+            id: "62",
+            type: "households",
+          },
+          {
+            id: "62",
+            type: "households",
+          },
+          {
+            id: "62",
+            type: "households",
+          },
+          {
+            id: "62",
+            type: "households",
+          },
+          {
+            id: "62",
+            type: "households",
+          },
+          {
+            id: "63",
+            type: "households",
+          },
+          {
+            id: "63",
+            type: "households",
+          },
+          {
+            id: "63",
+            type: "households",
+          },
+          {
+            id: "63",
+            type: "households",
+          },
+          {
+            id: "63",
+            type: "households",
+          },
+          {
+            id: "63",
+            type: "households",
+          },
+          {
+            id: "63",
+            type: "households",
+          },
+          {
+            id: "63",
+            type: "households",
+          },
+          {
+            id: "63",
+            type: "households",
+          },
+          {
+            id: "63",
+            type: "households",
+          },
+          {
+            id: "63",
+            type: "households",
+          },
+          {
+            id: "63",
+            type: "households",
+          },
+          {
+            id: "63",
+            type: "households",
+          },
+          {
+            id: "63",
+            type: "households",
+          },
+          {
+            id: "63",
+            type: "households",
+          },
+          {
+            id: "63",
+            type: "households",
+          },
+          {
+            id: "63",
+            type: "households",
+          },
+          {
+            id: "63",
+            type: "households",
+          },
+          {
+            id: "63",
+            type: "households",
+          },
+          {
+            id: "63",
+            type: "households",
+          },
+          {
+            id: "63",
+            type: "households",
+          },
+          {
+            id: "63",
+            type: "households",
+          },
+          {
+            id: "63",
+            type: "households",
+          },
+          {
+            id: "63",
+            type: "households",
+          },
+          {
+            id: "63",
+            type: "households",
+          },
+          {
+            id: "63",
+            type: "households",
+          },
+          {
+            id: "63",
+            type: "households",
+          },
+          {
+            id: "63",
+            type: "households",
+          },
+          {
+            id: "63",
+            type: "households",
+          },
+          {
+            id: "63",
+            type: "households",
+          },
+          {
+            id: "64",
+            type: "households",
+          },
+          {
+            id: "64",
+            type: "households",
+          },
+          {
+            id: "64",
+            type: "households",
+          },
+          {
+            id: "64",
+            type: "households",
+          },
+          {
+            id: "64",
+            type: "households",
+          },
+          {
+            id: "64",
+            type: "households",
+          },
+          {
+            id: "64",
+            type: "households",
+          },
+          {
+            id: "64",
+            type: "households",
+          },
+          {
+            id: "64",
+            type: "households",
+          },
+          {
+            id: "64",
+            type: "households",
+          },
+          {
+            id: "64",
+            type: "households",
+          },
+          {
+            id: "64",
+            type: "households",
+          },
+          {
+            id: "64",
+            type: "households",
+          },
+          {
+            id: "64",
+            type: "households",
+          },
+          {
+            id: "64",
+            type: "households",
+          },
+          {
+            id: "64",
+            type: "households",
+          },
+          {
+            id: "64",
+            type: "households",
+          },
+          {
+            id: "64",
+            type: "households",
+          },
+          {
+            id: "64",
+            type: "households",
+          },
+          {
+            id: "64",
+            type: "households",
+          },
+          {
+            id: "64",
+            type: "households",
+          },
+          {
+            id: "64",
+            type: "households",
+          },
+          {
+            id: "64",
+            type: "households",
+          },
+          {
+            id: "64",
+            type: "households",
+          },
+          {
+            id: "64",
+            type: "households",
+          },
+          {
+            id: "64",
+            type: "households",
+          },
+          {
+            id: "64",
+            type: "households",
+          },
+          {
+            id: "64",
+            type: "households",
+          },
+          {
+            id: "64",
+            type: "households",
+          },
+          {
+            id: "64",
+            type: "households",
+          },
+          {
+            id: "65",
+            type: "households",
+          },
+          {
+            id: "65",
+            type: "households",
+          },
+          {
+            id: "65",
+            type: "households",
+          },
+          {
+            id: "65",
+            type: "households",
+          },
+          {
+            id: "65",
+            type: "households",
+          },
+          {
+            id: "65",
+            type: "households",
+          },
+          {
+            id: "65",
+            type: "households",
+          },
+          {
+            id: "65",
+            type: "households",
+          },
+          {
+            id: "65",
+            type: "households",
+          },
+          {
+            id: "65",
+            type: "households",
+          },
+          {
+            id: "65",
+            type: "households",
+          },
+          {
+            id: "65",
+            type: "households",
+          },
+          {
+            id: "65",
+            type: "households",
+          },
+          {
+            id: "65",
+            type: "households",
+          },
+          {
+            id: "65",
+            type: "households",
+          },
+          {
+            id: "65",
+            type: "households",
+          },
+          {
+            id: "65",
+            type: "households",
+          },
+          {
+            id: "65",
+            type: "households",
+          },
+          {
+            id: "65",
+            type: "households",
+          },
+          {
+            id: "65",
+            type: "households",
+          },
+          {
+            id: "65",
+            type: "households",
+          },
+          {
+            id: "65",
+            type: "households",
+          },
+          {
+            id: "65",
+            type: "households",
+          },
+          {
+            id: "65",
+            type: "households",
+          },
+          {
+            id: "65",
+            type: "households",
+          },
+          {
+            id: "65",
+            type: "households",
+          },
+          {
+            id: "65",
+            type: "households",
+          },
+          {
+            id: "65",
+            type: "households",
+          },
+          {
+            id: "65",
+            type: "households",
+          },
+          {
+            id: "65",
+            type: "households",
+          },
+          {
+            id: "66",
+            type: "households",
+          },
+          {
+            id: "66",
+            type: "households",
+          },
+          {
+            id: "66",
+            type: "households",
+          },
+          {
+            id: "66",
+            type: "households",
+          },
+          {
+            id: "66",
+            type: "households",
+          },
+          {
+            id: "66",
+            type: "households",
+          },
+          {
+            id: "66",
+            type: "households",
+          },
+          {
+            id: "66",
+            type: "households",
+          },
+          {
+            id: "66",
+            type: "households",
+          },
+          {
+            id: "66",
+            type: "households",
+          },
+          {
+            id: "66",
+            type: "households",
+          },
+          {
+            id: "66",
+            type: "households",
+          },
+          {
+            id: "66",
+            type: "households",
+          },
+          {
+            id: "66",
+            type: "households",
+          },
+          {
+            id: "66",
+            type: "households",
+          },
+          {
+            id: "66",
+            type: "households",
+          },
+          {
+            id: "66",
+            type: "households",
+          },
+          {
+            id: "66",
+            type: "households",
+          },
+          {
+            id: "66",
+            type: "households",
+          },
+          {
+            id: "66",
+            type: "households",
+          },
+          {
+            id: "66",
+            type: "households",
+          },
+          {
+            id: "66",
+            type: "households",
+          },
+          {
+            id: "66",
+            type: "households",
+          },
+          {
+            id: "66",
+            type: "households",
+          },
+          {
+            id: "66",
+            type: "households",
+          },
+          {
+            id: "66",
+            type: "households",
+          },
+          {
+            id: "66",
+            type: "households",
+          },
+          {
+            id: "66",
+            type: "households",
+          },
+          {
+            id: "66",
+            type: "households",
+          },
+          {
+            id: "66",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "67",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "100",
+            type: "households",
+          },
+          {
+            id: "101",
+            type: "households",
+          },
+          {
+            id: "101",
+            type: "households",
+          },
+          {
+            id: "101",
+            type: "households",
+          },
+          {
+            id: "101",
+            type: "households",
+          },
+          {
+            id: "101",
+            type: "households",
+          },
+          {
+            id: "101",
+            type: "households",
+          },
+          {
+            id: "101",
+            type: "households",
+          },
+          {
+            id: "101",
+            type: "households",
+          },
+          {
+            id: "101",
+            type: "households",
+          },
+          {
+            id: "101",
+            type: "households",
+          },
+          {
+            id: "101",
+            type: "households",
+          },
+          {
+            id: "101",
+            type: "households",
+          },
+          {
+            id: "101",
+            type: "households",
+          },
+          {
+            id: "101",
+            type: "households",
+          },
+          {
+            id: "101",
+            type: "households",
+          },
+          {
+            id: "101",
+            type: "households",
+          },
+          {
+            id: "101",
+            type: "households",
+          },
+          {
+            id: "101",
+            type: "households",
+          },
+          {
+            id: "101",
+            type: "households",
+          },
+          {
+            id: "101",
+            type: "households",
+          },
+          {
+            id: "101",
+            type: "households",
+          },
+          {
+            id: "101",
+            type: "households",
+          },
+          {
+            id: "101",
+            type: "households",
+          },
+          {
+            id: "101",
+            type: "households",
+          },
+          {
+            id: "101",
+            type: "households",
+          },
+          {
+            id: "101",
+            type: "households",
+          },
+          {
+            id: "101",
+            type: "households",
+          },
+          {
+            id: "101",
+            type: "households",
+          },
+          {
+            id: "101",
+            type: "households",
+          },
+          {
+            id: "101",
+            type: "households",
+          },
+          {
+            id: "102",
+            type: "households",
+          },
+          {
+            id: "102",
+            type: "households",
+          },
+          {
+            id: "102",
+            type: "households",
+          },
+          {
+            id: "102",
+            type: "households",
+          },
+          {
+            id: "102",
+            type: "households",
+          },
+          {
+            id: "102",
+            type: "households",
+          },
+          {
+            id: "102",
+            type: "households",
+          },
+          {
+            id: "102",
+            type: "households",
+          },
+          {
+            id: "102",
+            type: "households",
+          },
+          {
+            id: "102",
+            type: "households",
+          },
+          {
+            id: "102",
+            type: "households",
+          },
+          {
+            id: "102",
+            type: "households",
+          },
+          {
+            id: "102",
+            type: "households",
+          },
+          {
+            id: "102",
+            type: "households",
+          },
+          {
+            id: "102",
+            type: "households",
+          },
+          {
+            id: "102",
+            type: "households",
+          },
+          {
+            id: "102",
+            type: "households",
+          },
+          {
+            id: "102",
+            type: "households",
+          },
+          {
+            id: "102",
+            type: "households",
+          },
+          {
+            id: "102",
+            type: "households",
+          },
+          {
+            id: "102",
+            type: "households",
+          },
+          {
+            id: "102",
+            type: "households",
+          },
+          {
+            id: "102",
+            type: "households",
+          },
+          {
+            id: "102",
+            type: "households",
+          },
+          {
+            id: "102",
+            type: "households",
+          },
+          {
+            id: "102",
+            type: "households",
+          },
+          {
+            id: "102",
+            type: "households",
+          },
+          {
+            id: "102",
+            type: "households",
+          },
+          {
+            id: "102",
+            type: "households",
+          },
+          {
+            id: "102",
+            type: "households",
+          },
+          {
+            id: "103",
+            type: "households",
+          },
+          {
+            id: "103",
+            type: "households",
+          },
+          {
+            id: "103",
+            type: "households",
+          },
+          {
+            id: "103",
+            type: "households",
+          },
+          {
+            id: "103",
+            type: "households",
+          },
+          {
+            id: "103",
+            type: "households",
+          },
+          {
+            id: "103",
+            type: "households",
+          },
+          {
+            id: "103",
+            type: "households",
+          },
+          {
+            id: "103",
+            type: "households",
+          },
+          {
+            id: "103",
+            type: "households",
+          },
+          {
+            id: "103",
+            type: "households",
+          },
+          {
+            id: "103",
+            type: "households",
+          },
+          {
+            id: "103",
+            type: "households",
+          },
+          {
+            id: "103",
+            type: "households",
+          },
+          {
+            id: "103",
+            type: "households",
+          },
+          {
+            id: "103",
+            type: "households",
+          },
+          {
+            id: "103",
+            type: "households",
+          },
+          {
+            id: "103",
+            type: "households",
+          },
+          {
+            id: "103",
+            type: "households",
+          },
+          {
+            id: "103",
+            type: "households",
+          },
+          {
+            id: "103",
+            type: "households",
+          },
+          {
+            id: "103",
+            type: "households",
+          },
+          {
+            id: "103",
+            type: "households",
+          },
+          {
+            id: "103",
+            type: "households",
+          },
+          {
+            id: "103",
+            type: "households",
+          },
+          {
+            id: "103",
+            type: "households",
+          },
+          {
+            id: "103",
+            type: "households",
+          },
+          {
+            id: "103",
+            type: "households",
+          },
+          {
+            id: "103",
+            type: "households",
+          },
+          {
+            id: "103",
+            type: "households",
+          },
+          {
+            id: "104",
+            type: "households",
+          },
+          {
+            id: "104",
+            type: "households",
+          },
+          {
+            id: "104",
+            type: "households",
+          },
+          {
+            id: "104",
+            type: "households",
+          },
+          {
+            id: "104",
+            type: "households",
+          },
+          {
+            id: "104",
+            type: "households",
+          },
+          {
+            id: "104",
+            type: "households",
+          },
+          {
+            id: "104",
+            type: "households",
+          },
+          {
+            id: "104",
+            type: "households",
+          },
+          {
+            id: "104",
+            type: "households",
+          },
+          {
+            id: "104",
+            type: "households",
+          },
+          {
+            id: "104",
+            type: "households",
+          },
+          {
+            id: "104",
+            type: "households",
+          },
+          {
+            id: "104",
+            type: "households",
+          },
+          {
+            id: "104",
+            type: "households",
+          },
+          {
+            id: "104",
+            type: "households",
+          },
+          {
+            id: "104",
+            type: "households",
+          },
+          {
+            id: "104",
+            type: "households",
+          },
+          {
+            id: "104",
+            type: "households",
+          },
+          {
+            id: "104",
+            type: "households",
+          },
+          {
+            id: "104",
+            type: "households",
+          },
+          {
+            id: "104",
+            type: "households",
+          },
+          {
+            id: "104",
+            type: "households",
+          },
+          {
+            id: "104",
+            type: "households",
+          },
+          {
+            id: "104",
+            type: "households",
+          },
+          {
+            id: "104",
+            type: "households",
+          },
+          {
+            id: "104",
+            type: "households",
+          },
+          {
+            id: "104",
+            type: "households",
+          },
+          {
+            id: "104",
+            type: "households",
+          },
+          {
+            id: "104",
+            type: "households",
+          },
+          {
+            id: "105",
+            type: "households",
+          },
+          {
+            id: "105",
+            type: "households",
+          },
+          {
+            id: "105",
+            type: "households",
+          },
+          {
+            id: "105",
+            type: "households",
+          },
+          {
+            id: "105",
+            type: "households",
+          },
+          {
+            id: "105",
+            type: "households",
+          },
+          {
+            id: "105",
+            type: "households",
+          },
+          {
+            id: "105",
+            type: "households",
+          },
+          {
+            id: "105",
+            type: "households",
+          },
+          {
+            id: "105",
+            type: "households",
+          },
+          {
+            id: "105",
+            type: "households",
+          },
+          {
+            id: "105",
+            type: "households",
+          },
+          {
+            id: "105",
+            type: "households",
+          },
+          {
+            id: "105",
+            type: "households",
+          },
+          {
+            id: "105",
+            type: "households",
+          },
+          {
+            id: "105",
+            type: "households",
+          },
+          {
+            id: "105",
+            type: "households",
+          },
+          {
+            id: "105",
+            type: "households",
+          },
+          {
+            id: "105",
+            type: "households",
+          },
+          {
+            id: "105",
+            type: "households",
+          },
+          {
+            id: "105",
+            type: "households",
+          },
+          {
+            id: "105",
+            type: "households",
+          },
+          {
+            id: "105",
+            type: "households",
+          },
+          {
+            id: "105",
+            type: "households",
+          },
+          {
+            id: "105",
+            type: "households",
+          },
+          {
+            id: "105",
+            type: "households",
+          },
+          {
+            id: "105",
+            type: "households",
+          },
+          {
+            id: "105",
+            type: "households",
+          },
+          {
+            id: "105",
+            type: "households",
+          },
+          {
+            id: "105",
+            type: "households",
+          },
+          {
+            id: "106",
+            type: "households",
+          },
+          {
+            id: "106",
+            type: "households",
+          },
+          {
+            id: "106",
+            type: "households",
+          },
+          {
+            id: "106",
+            type: "households",
+          },
+          {
+            id: "106",
+            type: "households",
+          },
+          {
+            id: "106",
+            type: "households",
+          },
+          {
+            id: "106",
+            type: "households",
+          },
+          {
+            id: "106",
+            type: "households",
+          },
+          {
+            id: "106",
+            type: "households",
+          },
+          {
+            id: "106",
+            type: "households",
+          },
+          {
+            id: "106",
+            type: "households",
+          },
+          {
+            id: "106",
+            type: "households",
+          },
+          {
+            id: "106",
+            type: "households",
+          },
+          {
+            id: "106",
+            type: "households",
+          },
+          {
+            id: "106",
+            type: "households",
+          },
+          {
+            id: "106",
+            type: "households",
+          },
+          {
+            id: "106",
+            type: "households",
+          },
+          {
+            id: "106",
+            type: "households",
+          },
+          {
+            id: "106",
+            type: "households",
+          },
+          {
+            id: "106",
+            type: "households",
+          },
+          {
+            id: "106",
+            type: "households",
+          },
+          {
+            id: "106",
+            type: "households",
+          },
+          {
+            id: "106",
+            type: "households",
+          },
+          {
+            id: "106",
+            type: "households",
+          },
+          {
+            id: "106",
+            type: "households",
+          },
+          {
+            id: "106",
+            type: "households",
+          },
+          {
+            id: "106",
+            type: "households",
+          },
+          {
+            id: "106",
+            type: "households",
+          },
+          {
+            id: "106",
+            type: "households",
+          },
+          {
+            id: "106",
+            type: "households",
+          },
+          {
+            id: "107",
+            type: "households",
+          },
+          {
+            id: "107",
+            type: "households",
+          },
+          {
+            id: "107",
+            type: "households",
+          },
+          {
+            id: "107",
+            type: "households",
+          },
+          {
+            id: "107",
+            type: "households",
+          },
+          {
+            id: "107",
+            type: "households",
+          },
+          {
+            id: "107",
+            type: "households",
+          },
+          {
+            id: "107",
+            type: "households",
+          },
+          {
+            id: "107",
+            type: "households",
+          },
+          {
+            id: "107",
+            type: "households",
+          },
+          {
+            id: "107",
+            type: "households",
+          },
+          {
+            id: "107",
+            type: "households",
+          },
+          {
+            id: "107",
+            type: "households",
+          },
+          {
+            id: "107",
+            type: "households",
+          },
+          {
+            id: "107",
+            type: "households",
+          },
+          {
+            id: "107",
+            type: "households",
+          },
+          {
+            id: "107",
+            type: "households",
+          },
+          {
+            id: "107",
+            type: "households",
+          },
+          {
+            id: "107",
+            type: "households",
+          },
+          {
+            id: "107",
+            type: "households",
+          },
+          {
+            id: "107",
+            type: "households",
+          },
+          {
+            id: "107",
+            type: "households",
+          },
+          {
+            id: "107",
+            type: "households",
+          },
+          {
+            id: "107",
+            type: "households",
+          },
+          {
+            id: "107",
+            type: "households",
+          },
+          {
+            id: "107",
+            type: "households",
+          },
+          {
+            id: "107",
+            type: "households",
+          },
+          {
+            id: "107",
+            type: "households",
+          },
+          {
+            id: "107",
+            type: "households",
+          },
+          {
+            id: "107",
+            type: "households",
+          },
+          {
+            id: "108",
+            type: "households",
+          },
+          {
+            id: "108",
+            type: "households",
+          },
+          {
+            id: "108",
+            type: "households",
+          },
+          {
+            id: "108",
+            type: "households",
+          },
+          {
+            id: "108",
+            type: "households",
+          },
+          {
+            id: "108",
+            type: "households",
+          },
+          {
+            id: "108",
+            type: "households",
+          },
+          {
+            id: "108",
+            type: "households",
+          },
+          {
+            id: "108",
+            type: "households",
+          },
+          {
+            id: "108",
+            type: "households",
+          },
+          {
+            id: "108",
+            type: "households",
+          },
+          {
+            id: "108",
+            type: "households",
+          },
+          {
+            id: "108",
+            type: "households",
+          },
+          {
+            id: "108",
+            type: "households",
+          },
+          {
+            id: "108",
+            type: "households",
+          },
+          {
+            id: "108",
+            type: "households",
+          },
+          {
+            id: "108",
+            type: "households",
+          },
+          {
+            id: "108",
+            type: "households",
+          },
+          {
+            id: "108",
+            type: "households",
+          },
+          {
+            id: "108",
+            type: "households",
+          },
+          {
+            id: "108",
+            type: "households",
+          },
+          {
+            id: "108",
+            type: "households",
+          },
+          {
+            id: "108",
+            type: "households",
+          },
+          {
+            id: "108",
+            type: "households",
+          },
+          {
+            id: "108",
+            type: "households",
+          },
+          {
+            id: "108",
+            type: "households",
+          },
+          {
+            id: "108",
+            type: "households",
+          },
+          {
+            id: "108",
+            type: "households",
+          },
+          {
+            id: "108",
+            type: "households",
+          },
+          {
+            id: "108",
+            type: "households",
+          },
+        ],
+      },
+      devices: {
+        data: [
+          {
+            id: "sh-KS6H8g",
+            type: "devices",
+          },
+          {
+            id: "nb-3HC38g",
+            type: "devices",
+          },
+          {
+            id: "stx-8nnbmQ",
+            type: "devices",
+          },
+          {
+            id: "sma-7UbW4g",
+            type: "devices",
+          },
+          {
+            id: "sh-6iiGUQ",
+            type: "devices",
+          },
+          {
+            id: "gro-LR19GQ",
+            type: "devices",
+          },
+          {
+            id: "nb-rCW25g",
+            type: "devices",
+          },
+          {
+            id: "sh-kJbAVQ",
+            type: "devices",
+          },
+          {
+            id: "sh-GeTofg",
+            type: "devices",
+          },
+          {
+            id: "nb-stYZAw",
+            type: "devices",
+          },
+          {
+            id: "smx-t8hCqA",
+            type: "devices",
+          },
+          {
+            id: "nb-btHGVA",
+            type: "devices",
+          },
+          {
+            id: "vic-7zno2w",
+            type: "devices",
+          },
+          {
+            id: "sh-sT_q5g",
+            type: "devices",
+          },
+          {
+            id: "sma-STLjag",
+            type: "devices",
+          },
+          {
+            id: "sh-jrsfvQ",
+            type: "devices",
+          },
+          {
+            id: "scg-9xHuxg",
+            type: "devices",
+          },
+          {
+            id: "fsw-rUhM6A",
+            type: "devices",
+          },
+          {
+            id: "sh-ZyYnyQ",
+            type: "devices",
+          },
+          {
+            id: "fsw-_77rpw",
+            type: "devices",
+          },
+          {
+            id: "sh-Ku8Hsw",
+            type: "devices",
+          },
+          {
+            id: "gxs-XvyFeQ",
+            type: "devices",
+          },
+          {
+            id: "vic-g1Jqkg",
+            type: "devices",
+          },
+          {
+            id: "nb-xj3T_A",
+            type: "devices",
+          },
+          {
+            id: "vic-2AUgWA",
+            type: "devices",
+          },
+          {
+            id: "sh-FBi41w",
+            type: "devices",
+          },
+          {
+            id: "gxs-doW8YQ",
+            type: "devices",
+          },
+          {
+            id: "sh-u5hP1w",
+            type: "devices",
+          },
+          {
+            id: "sh-1io8uw",
+            type: "devices",
+          },
+          {
+            id: "snk-kHsbPQ",
+            type: "devices",
+          },
+          {
+            id: "snk-K_YdaQ",
+            type: "devices",
+          },
+          {
+            id: "sh-s3J2jg",
+            type: "devices",
+          },
+          {
+            id: "gxs-DP-svQ",
+            type: "devices",
+          },
+          {
+            id: "sh-6nJitA",
+            type: "devices",
+          },
+          {
+            id: "gxs-AZ5ZPg",
+            type: "devices",
+          },
+          {
+            id: "gxs-mon9cQ",
+            type: "devices",
+          },
+          {
+            id: "sh-PaywCA",
+            type: "devices",
+          },
+          {
+            id: "gro-SzB97A",
+            type: "devices",
+          },
+          {
+            id: "sh-kuokww",
+            type: "devices",
+          },
+          {
+            id: "sh-zjypdg",
+            type: "devices",
+          },
+          {
+            id: "gxs-HVCFxw",
+            type: "devices",
+          },
+          {
+            id: "gxs-hEBsrg",
+            type: "devices",
+          },
+          {
+            id: "sh-TV1asA",
+            type: "devices",
+          },
+          {
+            id: "gxs-Q4TxNw",
+            type: "devices",
+          },
+          {
+            id: "gxs-Emcv2g",
+            type: "devices",
+          },
+          {
+            id: "sh-_DH6RA",
+            type: "devices",
+          },
+          {
+            id: "gxs-bHZGyg",
+            type: "devices",
+          },
+          {
+            id: "gxs-1DmDaA",
+            type: "devices",
+          },
+          {
+            id: "sh-EtJMig",
+            type: "devices",
+          },
+          {
+            id: "sh-FTkUtg",
+            type: "devices",
+          },
+          {
+            id: "sma-P7sbyA",
+            type: "devices",
+          },
+          {
+            id: "sh-So69pQ",
+            type: "devices",
+          },
+        ],
+      },
+      nps_surveys: {
+        data: [],
+      },
+      teams: {
+        data: [
+          {
+            id: "2",
+            type: "teams",
+          },
+        ],
+      },
+      primary_team: {
+        data: {
+          id: "2",
+          type: "teams",
+        },
+      },
+    },
+  },
+  included: [
+    {
+      id: "2",
+      type: "teams",
+      attributes: {
+        name: "SHYFT Power Solutions",
+        industry_type: "Energy/Power",
+        industry_company_type: "Energy services provider",
+        active_feature_flags: [
+          {
+            name: "scheduling",
+            active: true,
+          },
+        ],
+        new_fuel_management_available_enabled: true,
+      },
+      relationships: {
+        properties: {
+          data: [
+            {
+              id: "9",
+              type: "properties",
+            },
+            {
+              id: "17",
+              type: "properties",
+            },
+            {
+              id: "55",
+              type: "properties",
+            },
+            {
+              id: "56",
+              type: "properties",
+            },
+            {
+              id: "59",
+              type: "properties",
+            },
+            {
+              id: "60",
+              type: "properties",
+            },
+            {
+              id: "61",
+              type: "properties",
+            },
+            {
+              id: "62",
+              type: "properties",
+            },
+            {
+              id: "63",
+              type: "properties",
+            },
+            {
+              id: "64",
+              type: "properties",
+            },
+            {
+              id: "65",
+              type: "properties",
+            },
+            {
+              id: "66",
+              type: "properties",
+            },
+            {
+              id: "67",
+              type: "properties",
+            },
+            {
+              id: "100",
+              type: "properties",
+            },
+            {
+              id: "101",
+              type: "properties",
+            },
+            {
+              id: "102",
+              type: "properties",
+            },
+            {
+              id: "103",
+              type: "properties",
+            },
+            {
+              id: "104",
+              type: "properties",
+            },
+            {
+              id: "105",
+              type: "properties",
+            },
+            {
+              id: "106",
+              type: "properties",
+            },
+            {
+              id: "107",
+              type: "properties",
+            },
+            {
+              id: "108",
+              type: "properties",
+            },
+          ],
+        },
+        users: {
+          data: [
+            {
+              id: "93",
+              type: "users",
+            },
+            {
+              id: "99",
+              type: "users",
+            },
+            {
+              id: "113",
+              type: "users",
+            },
+            {
+              id: "114",
+              type: "users",
+            },
+            {
+              id: "115",
+              type: "users",
+            },
+            {
+              id: "116",
+              type: "users",
+            },
+            {
+              id: "94",
+              type: "users",
+            },
+            {
+              id: "120",
+              type: "users",
+            },
+            {
+              id: "122",
+              type: "users",
+            },
+            {
+              id: "123",
+              type: "users",
+            },
+            {
+              id: "124",
+              type: "users",
+            },
+            {
+              id: "125",
+              type: "users",
+            },
+            {
+              id: "126",
+              type: "users",
+            },
+            {
+              id: "127",
+              type: "users",
+            },
+            {
+              id: "160",
+              type: "users",
+            },
+            {
+              id: "161",
+              type: "users",
+            },
+            {
+              id: "162",
+              type: "users",
+            },
+            {
+              id: "163",
+              type: "users",
+            },
+            {
+              id: "164",
+              type: "users",
+            },
+            {
+              id: "117",
+              type: "users",
+            },
+            {
+              id: "100",
+              type: "users",
+            },
+            {
+              id: "166",
+              type: "users",
+            },
+            {
+              id: "203",
+              type: "users",
+            },
+            {
+              id: "204",
+              type: "users",
+            },
+            {
+              id: "205",
+              type: "users",
+            },
+            {
+              id: "206",
+              type: "users",
+            },
+            {
+              id: "207",
+              type: "users",
+            },
+            {
+              id: "121",
+              type: "users",
+            },
+            {
+              id: "208",
+              type: "users",
+            },
+            {
+              id: "209",
+              type: "users",
+            },
+            {
+              id: "210",
+              type: "users",
+            },
+            {
+              id: "213",
+              type: "users",
+            },
+          ],
+        },
+      },
+    },
+  ],
+};
+
 export default function getmockresult(index) {
   if (index === 200) {
     return data;
+  }
+
+  if (index === 201) {
+    return profileresponse;
   }
 
   if (index === 404) {

@@ -4,43 +4,45 @@ import axios from "axios";
 import Profilecard from "./Profilecard/Profilecard";
 import Spinner from "../Sharedcomponents/Spinner/Spinner";
 import Loadingerror from "../Sharedcomponents/Loadingerror/Loadingerror";
+import { IuserObeject } from "../types";
+import React from "react";
 
 const Profile = () => {
-  const access_token = "zUKWzuo6UBFT-nu4HVmk";
-  const [error, setError]:any = useState(null);
-  const [items, setItems]:any = useState(null);
+  const accessToken = "zUKWzuo6UBFT-nu4HVmk";
+  const [error, setError] = React.useState<string>("");
+  const [items, setItems] = React.useState<IuserObeject>();
   // -1 Loading, 200 Success,0 No Internet Connection,  401 Unathorised, 404 Not Found From Testing the Api
-  const [dataStatus, setDataStatus]:any = useState([-1]);
+  const [dataStatus, setDataStatus]: any = useState([-1]);
 
   useEffect(() => {
     loadData();
   }, []);
 
   // Load Profile data information via api calls
-  const loadData = () => {
+  const loadData = async () => {
     setDataStatus(-1);
-    axios
-      .get(`https://api-dev.trysolstice.com/v1/users/me`, {
-        headers: {
-          Authorization: `Bearer  ${access_token}`,
-        },
-      })
-      .then((res) => {
-        //console.log(res);
-        setDataStatus(res.status);
-
-        //Collect/Map the Neccessary fields we need from our api Result in our own object.
-        const userObj = {
-          firstName: res.data.data["attributes"]["first_name"],
-          lastName: res.data.data["attributes"]["last_name"],
-        };
-        setItems(userObj);
-      })
-      .catch(function (error) {
-        setDataStatus(error.toJSON()["status"]);
-        // console.log(error.toJSON());
-        setError(error);
-      });
+    try {
+      const res = await axios.get(
+        `https://api-dev.trysolstice.com/v1/users/me`,
+        {
+          headers: {
+            Authorization: `Bearer  ${accessToken}`,
+          },
+        }
+      );
+      // console.log("success" + res);
+      setDataStatus(res.status);
+      // Collect/Map the Neccessary fields we need from our api Result in our own object.
+      const userObj: IuserObeject = {
+        firstName: res.data.data["attributes"]["first_name"],
+        lastName: res.data.data["attributes"]["last_name"],
+      };
+      setItems(userObj);
+    } catch (error: any) {
+      // console.log(error);
+      setDataStatus(error.response.status);
+      setError(error["response"]["data"]["errors"][0]["title"]);
+    }
   };
 
   return (
@@ -63,7 +65,7 @@ const Profile = () => {
       {dataStatus > 300 && (
         <Loadingerror
           reLoadData={() => loadData()}
-          errormessage={error.message}
+          errormessage={error}
         ></Loadingerror>
       )}
     </div>

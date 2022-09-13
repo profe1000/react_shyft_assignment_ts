@@ -1,11 +1,10 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import "./Location.css";
 import { useEffect } from "react";
 import axios from "axios";
 import Locationdata from "./Locationdata/Locationdata";
 import Spinner from "../Sharedcomponents/Spinner/Spinner";
 import Loadingerror from "../Sharedcomponents/Loadingerror/Loadingerror";
-import { Ilocationitemsprops } from "./types";
+import { Ilocationitemsprops } from "../types";
 import React from "react";
 
 const Location = () => {
@@ -41,42 +40,42 @@ const Location = () => {
       return;
     }
     setDataStatus(-1);
-    await axios
-      .get(`https://api-dev.trysolstice.com/v1/households/${residentId}`, {
-        headers: {
-          Authorization: `Bearer  ${accessToken}`,
-        },
-      })
-      .then((res) => {
-        //console.log(res);
-        setDataStatus(res.status);
-        //Collect/Map the Neccessary fields we need from our api Result in our own object.
-        const transformedDevices = res.data.included.map((deviceList: any) => {
-          return {
-            id: deviceList.id,
-            type: deviceList.type,
-            onlinestate: deviceList.attributes.online ? "True" : "False",
-          };
-        });
-        const locationObj: Ilocationitemsprops = {
-          address: res.data.data["attributes"]["address_1"],
-          residentName: res.data.data["attributes"]["nickname"],
-          totalEnergy:
-            res.data.data["attributes"]["usage_data"]["gen_usage_today"] +
-            res.data.data["attributes"]["usage_data"]["grid_usage_today"],
-          genUsage:
-            res.data.data["attributes"]["usage_data"]["gen_usage_today"],
-          gridUsgae:
-            res.data.data["attributes"]["usage_data"]["grid_usage_today"],
-          devices: transformedDevices,
+    try {
+      const res = await axios.get(
+        `https://api-dev.trysolstice.com/v1/households/${residentId}`,
+        {
+          headers: {
+            Authorization: `Bearer  ${accessToken}`,
+          },
+        }
+      );
+      // console.log("success" + res);
+      setDataStatus(res.status);
+      // Collect/Map the Neccessary fields we need from our api Result in our own object.
+      const transformedDevices = res.data.included.map((deviceList: any) => {
+        return {
+          id: deviceList.id,
+          type: deviceList.type,
+          onlinestate: deviceList.attributes.online ? "True" : "False",
         };
-        setItems(locationObj);
-      })
-      .catch(function (error) {
-        //console.log(error);
-        setDataStatus(400);
-        setError(error["response"]["data"]["errors"][0]["title"]);
       });
+      const locationObj: Ilocationitemsprops = {
+        address: res.data.data["attributes"]["address_1"],
+        residentName: res.data.data["attributes"]["nickname"],
+        totalEnergy:
+          res.data.data["attributes"]["usage_data"]["gen_usage_today"] +
+          res.data.data["attributes"]["usage_data"]["grid_usage_today"],
+        genUsage: res.data.data["attributes"]["usage_data"]["gen_usage_today"],
+        gridUsgae:
+          res.data.data["attributes"]["usage_data"]["grid_usage_today"],
+        devices: transformedDevices,
+      };
+      setItems(locationObj);
+    } catch (error: any) {
+      // console.log(error);
+      setDataStatus(error.response.status);
+      setError(error["response"]["data"]["errors"][0]["title"]);
+    }
   };
 
   return (
@@ -91,13 +90,13 @@ const Location = () => {
       {/* Display the search Box for Searching for Resident ID */}
       <div className="w3-container w3-margin-bottom">
         <div className="w3-col w3-right btnholder">
-          <a
+          <button
             data-testid="btnLoadData"
             onClick={() => startLoading()}
             className="w3-btn w3-yellow w3-round w3-text-blue btn"
           >
             Search
-          </a>
+          </button>
         </div>
 
         <div className="w3-rest">

@@ -12,3 +12,8 @@ export type Idevice = {
   type: string;
   onlinestate: string;
 };
+
+export interface IuserObeject {
+  firstName: string;
+  lastName: string;
+}
