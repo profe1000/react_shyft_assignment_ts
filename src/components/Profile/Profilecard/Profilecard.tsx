@@ -1,8 +1,16 @@
 import { IuserObeject } from "../../types";
+import { useContext } from "react";
 import "./Profilecard.css";
+import { UpdateUserContext, UserContext } from "../../../pages/Home/Home";
 
 const Profilecard = (props: any) => {
   const propItem: IuserObeject = props.items;
+  const user = useContext(UserContext);
+  const updateFunc = useContext(UpdateUserContext);
+
+  const changeName = () => {
+    updateFunc("Emmanuel");
+  };
 
   return (
     <>
@@ -16,6 +24,10 @@ const Profilecard = (props: any) => {
         &nbsp; Welcome, {propItem.firstName + " " + propItem.lastName}
         <br />
         <br />
+        User From Context {user}
+        <br />
+        <br />
+        <button onClick={changeName}> Change Content.</button>
       </div>
     </>
   );

@@ -1,11 +1,17 @@
+import { useContext } from "react";
+import { UserContext } from "../../../pages/Home/Home";
 import { Idevice, Ilocationitemsprops } from "../../types";
 import "./Locationdata.css";
 
 const Locationdata = (props: any) => {
   const propItem: Ilocationitemsprops = props.items;
 
+  const user = useContext(UserContext);
+
   return (
     <div className="w3-padding w3-round w3-white">
+      User From Context {user}
+      <br /> <br />
       <img
         src={process.env.PUBLIC_URL + "images/iconaddress.png"}
         className="icon"
