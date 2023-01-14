@@ -1,7 +1,7 @@
 import { IuserObeject } from "../../types";
 import { useContext } from "react";
 import "./Profilecard.css";
-import { UpdateUserContext, UserContext } from "../../../pages/Home/Home";
+import { UpdateUserContext, UserContext } from "../../../context/BasicContext";
 
 const Profilecard = (props: any) => {
   const propItem: IuserObeject = props.items;

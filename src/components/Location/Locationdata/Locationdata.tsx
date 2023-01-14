@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { UserContext } from "../../../pages/Home/Home";
+import { UserContext } from "../../../context/BasicContext";
 import { Idevice, Ilocationitemsprops } from "../../types";
 import "./Locationdata.css";
 
