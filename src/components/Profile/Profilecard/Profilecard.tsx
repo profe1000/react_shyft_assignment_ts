@@ -1,15 +1,24 @@
 import { IuserObeject } from "../../types";
 import { useContext } from "react";
 import "./Profilecard.css";
-import { UpdateUserContext, UserContext } from "../../../context/BasicContext";
+import {
+  generalDetailsContext,
+  UpdateUserContext,
+  UserContext,
+} from "../../../context/BasicContext";
 
 const Profilecard = (props: any) => {
   const propItem: IuserObeject = props.items;
   const user = useContext(UserContext);
   const updateFunc = useContext(UpdateUserContext);
+  const generalDetails = useContext(generalDetailsContext);
 
   const changeName = () => {
     updateFunc("Emmanuel");
+  };
+
+  const changeGeneralInfo = () => {
+    generalDetails?.updateDetails("Bros Emmanuel", 32);
   };
 
   return (
@@ -28,6 +37,15 @@ const Profilecard = (props: any) => {
         <br />
         <br />
         <button onClick={changeName}> Change Content.</button>
+        <div>
+          <hr />
+          General Details FullName : {generalDetails?.fullname} <br /> <br />
+          General Details Age : {generalDetails?.age} <br />
+          <br />
+          <button onClick={changeGeneralInfo}>
+            Update General Details Name
+          </button>
+        </div>
       </div>
     </>
   );
