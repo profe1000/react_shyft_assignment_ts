@@ -3,7 +3,7 @@ import { UserContext } from "../../../context/BasicContext";
 import { Idevice, Ilocationitemsprops } from "../../types";
 import "./Locationdata.css";
 
-const Locationdata = (props: any) => {
+const Locationdata: React.FC<any> = (props: any) => {
   const propItem: Ilocationitemsprops = props.items;
 
   const user = useContext(UserContext);
