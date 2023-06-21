@@ -6,6 +6,7 @@ import Spinner from "../Sharedcomponents/Spinner/Spinner";
 import Loadingerror from "../Sharedcomponents/Loadingerror/Loadingerror";
 import { IuserObeject } from "../types";
 import React from "react";
+import useFetch from "../hooks/FetchUrl";
 
 const Profile = () => {
   const accessToken = "zUKWzuo6UBFT-nu4HVmk";
@@ -44,6 +45,12 @@ const Profile = () => {
       setError(error["response"]["data"]["errors"][0]["title"]);
     }
   };
+
+  const fetchData = useFetch(
+    "https://production-flexview-backend.herokuapp.com/mobile_app_versions/shyft-flexview-resident/last"
+  );
+
+  console.log(fetchData);
 
   return (
     <div className="w3-card-2 w3-padding  w3-round w3-white">

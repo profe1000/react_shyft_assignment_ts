@@ -5,8 +5,12 @@ import Layout from "./pages/Layout/Layout";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Nopage from "./pages/Nopage/Nopage";
+import useVersion from "./components/hooks/version";
 
 const App = () => {
+
+  useVersion();
+  
   return (
     <BrowserRouter>
       <Routes>
