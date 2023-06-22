@@ -11,6 +11,7 @@
     "@types/react": "^18.0.18",
     "@types/react-dom": "^18.0.6",
     "axios": "^0.27.2",
+    "jsonapi-serializer": "^3.6.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
@@ -47,6 +48,7 @@
     ]
   },
   "devDependencies": {
+    "@types/jsonapi-serializer": "^3.6.5",
     "axios-mock-adapter": "^1.21.2",
     "jest-mock-axios": "^4.7.0-beta",
     "jest-watch-typeahead": "^0.6.5"

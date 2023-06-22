@@ -7,6 +7,7 @@ import Loadingerror from "../Sharedcomponents/Loadingerror/Loadingerror";
 import { IuserObeject } from "../types";
 import React from "react";
 import useFetch from "../hooks/FetchUrl";
+import { Deserializer } from "jsonapi-serializer";
 
 const Profile = () => {
   const accessToken = "zUKWzuo6UBFT-nu4HVmk";
@@ -46,11 +47,24 @@ const Profile = () => {
     }
   };
 
+  const deserialize = (json: any, opts?: any) => {
+    return new Deserializer({
+      ...opts,
+      keyForAttribute: "camelCase",
+    }).deserialize(json);
+  };
+
   const fetchData = useFetch(
     "https://production-flexview-backend.herokuapp.com/mobile_app_versions/shyft-flexview-resident/last"
   );
 
-  console.log(fetchData);
+  const getResult = async () => {
+    const result = await deserialize(fetchData.data);
+    console.log("Fetch Data ", fetchData);
+    console.log("Result ", result);
+  };
+
+  getResult();
 
   return (
     <div className="w3-card-2 w3-padding  w3-round w3-white">
